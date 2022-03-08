@@ -1,0 +1,43 @@
+/*Muted #9893a5/*/
+/*Subtle #797593/*/
+/*Text #f4ede8/*/
+/*Highlight #cecacd/*/
+/*Foam #56949f/*/
+
+/*Source_Serif_Pro, serif/*/
+/*Raleway, sans-serif/*/
+
+*   {
+    margin: 500;
+    padding: 500;
+}
+
+nav {
+    font-family: Source_Serif_Pro, serif;
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    height: inherit;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+a:link  {
+    color:#f4ede8;
+}
+
+a:hover {
+    color: #cecacd;
+}
+
+button {
+    color:#f4ede8;
+    font-family: Source_Serif_Pro, serif
+
+}
+
+body    {
+    background-color: #9893a5;
+    color: #f4ede8;
+    font-family: Source_Serif_Pro, serif
+}
