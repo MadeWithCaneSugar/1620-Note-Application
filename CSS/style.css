@@ -1,43 +1,82 @@
-/*Muted #9893a5/*/
-/*Subtle #797593/*/
-/*Text #f4ede8/*/
-/*Highlight #cecacd/*/
-/*Foam #56949f/*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
 
-/*Source_Serif_Pro, serif/*/
-/*Raleway, sans-serif/*/
+/*Source_Serif_Pro, serif*/
+/*Raleway, sans-serif*/
 
 *   {
     margin: 500;
     padding: 500;
 }
-
+/* Top Navigation Section */
 nav {
-    font-family: Source_Serif_Pro, serif;
     display: flex;
     justify-content: right;
     position: sticky;
     height: inherit;
     list-style-type: none;
+}
+nav ul li{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: inline;
     padding-right: 20px;
 }
 
 a:link  {
-    color:#f4ede8;
+    color:;
 }
 
 a:hover {
-    color: #cecacd;
+    color:;
 }
 
-button {
-    color:#f4ede8;
-    font-family: Source_Serif_Pro, serif
+/* New Note Button */
+.newNote {
+    background-color: ;
+    color:;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Side Menu Stuff */
+.sideMenuButton {
+    background-color: ;
+    color:;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: left;
+    position: sticky;
+    border: none;
+}
+
+.sideMenu   {
+    background-color:;
+    color:;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    display:flex;
+    justify-content: left;
+
 
 }
 
+/* Assumed Future Text Section */
 body    {
-    background-color: #9893a5;
-    color: #f4ede8;
-    font-family: Source_Serif_Pro, serif
+    background-color:;
+    color:;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+.footer {
+    color:;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
 }
