@@ -5,28 +5,25 @@
 /**/
 /**/
 
-/*Source_Serif_Pro, serif*/
-/*Raleway, sans-serif*/
+/*Roboto Slab = serif*/
+/*Roboto = sans-serif*/
 
 *   {
     margin: 500;
     padding: 500;
-    height: 1000px;
+    height:;
 }
 
-@media screen and (max-width: 600px)    {
-    
-}
-
-/* Top Navigation Section */
-nav {
+    /* Top Navigation Section */
+.navContainer {
     display: flex;
     justify-content: right;
     height: inherit;
-    margin-top: auto;
+    position: sticky;
+    top: 0;
     list-style-type: none;
 }
-nav ul li{
+.navContainer ul li {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display: inline;
     padding-right: 20px;
@@ -63,17 +60,34 @@ a:visited   {
 .newNoteButton {
     color:;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: fit content;
+    width: fit-content;
+    height: fit-content;
     display: flex;
-    justify-content: center;
+    padding-top: 200px;
+    justify-content: left;
     border: none;
     background: none;
+}
+
+.noteTextBox {
+    background-color: teal;
+    resize: none;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* Side Menu Stuff */
 .sideMenuContainer  {
     display: flex;
     flex-direction: column;
+    width: 16.5%;
 }
 
 .sideMenuButton {
@@ -81,27 +95,44 @@ a:visited   {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     width: fit-content;
     display: flex;
-    margin-top: auto;
-    justify-content: right;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: left;
     border: none;
     background: none;
 }
 
 .sideMenu   {
-    background-color:black;
+    background-color:coral;
     color:;
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-    height: 100%;
+    padding: 25px;
+    height: 100vh;
     justify-content: flex-start;
+}
+
+.sideMenuNav    {
+    display: flex;
+    justify-content: left;
+    height: inherit;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+}
+.sideMenuNav ul li  {
+    justify-content: left;
+    list-style: none;
+    padding-left: 0;
 }
 
 /* Footer */
 footer {
     color:;
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: end;
-    position: fixed;
+    left: 0;
     bottom: 0;
-    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    position: fixed;
 }
