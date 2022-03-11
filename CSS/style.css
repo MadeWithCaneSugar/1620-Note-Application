@@ -11,6 +11,7 @@
 *   {
     margin: 500;
     padding: 500;
+    height: 1000px;
 }
 
 @media screen and (max-width: 600px)    {
@@ -21,9 +22,7 @@
 nav {
     display: flex;
     justify-content: right;
-    position: sticky;
     height: inherit;
-    top: 0;
     margin-top: auto;
     list-style-type: none;
 }
@@ -61,9 +60,14 @@ a:visited   {
     flex-direction: column;
 }
 
-.newNote {
+.newNoteButton {
     color:;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: fit content;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background: none;
 }
 
 /* Side Menu Stuff */
@@ -72,23 +76,13 @@ a:visited   {
     flex-direction: column;
 }
 
-.sideMenuOpenButton {
+.sideMenuButton {
     color:;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     width: fit-content;
     display: flex;
-    justify-content: left;
-    border: none;
-    background: none;
-}
-
-.sideMenuCloseButton    {
-    color:;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: fit-content;
-    display: flex;
+    margin-top: auto;
     justify-content: right;
-    padding: 0;
     border: none;
     background: none;
 }
@@ -102,7 +96,7 @@ a:visited   {
 }
 
 /* Footer */
-.footer {
+footer {
     color:;
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
     display: flex;
