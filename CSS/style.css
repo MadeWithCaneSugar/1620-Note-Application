@@ -17,8 +17,6 @@
     /* Top Navigation Section */
 .navContainer {
     display: flex;
-    justify-content: right;
-    height: inherit;
     position: sticky;
     top: 0;
     list-style-type: none;
@@ -63,7 +61,7 @@ a:visited   {
     width: fit-content;
     height: fit-content;
     display: flex;
-    padding-top: 200px;
+    padding-top: 200%;
     justify-content: left;
     border: none;
     background: none;
@@ -72,15 +70,22 @@ a:visited   {
 .noteTextBox {
     background-color: teal;
     resize: none;
-    padding: 10px;
+    padding: 10%;
     max-width: 100%;
     line-height: 1.5;
     border: none;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
+.noteModButton  {
+    color:;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: none;
+    background: none;
 }
 
 /* Side Menu Stuff */
@@ -96,6 +101,7 @@ label {
     width: fit-content;
     display: flex;
     position: sticky;
+    font-size: larger;
     top: 0;
     width: 100%;
     justify-content: left;
@@ -107,7 +113,7 @@ label {
     background-color:coral;
     color:;
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-    padding: 25px;
+    padding: 10%;
     height: 100vh;
     justify-content: flex-start;
 }
@@ -136,3 +142,6 @@ footer {
     text-align: center;
     position: fixed;
 }
+
+@media only screen and (max-width: 600px) {
+  }
