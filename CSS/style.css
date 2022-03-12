@@ -1,9 +1,9 @@
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+/*Base #2a273f*/
+/*Overlay #393552*/
+/*Muted #6e6a86*/
+/*Subtle #908caa*/
+/*Text #e0def4*/
+/*Rose #ea9a97*/
 
 /*Roboto Slab = serif*/
 /*Roboto = sans-serif*/
@@ -15,12 +15,7 @@
 }
 
     /* Top Navigation Section */
-.navContainer {
-    display: flex;
-    position: sticky;
-    top: 0;
-    list-style-type: none;
-}
+
 .navContainer ul li {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display: inline;
@@ -28,24 +23,25 @@
 }
 
 a:link  {
-    color:;
+    color: #e0def4;
     text-decoration: none;
 }
 
 a:hover {
-    color:;
+    color: #e0def4;
     text-decoration: none;
 }
 
 a:visited   {
-    color:;
+    color: #e0def4;
     text-decoration: none;
 }
 
 /* Full Page Container. Whether or not you can see it yet, there's reason to this rhyme */
-.container    {
+body   {
+    background-color: #2a273f;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -56,19 +52,19 @@ a:visited   {
 }
 
 .newNoteButton {
-    color:;
+    color: #e0def4;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     width: fit-content;
-    height: fit-content;
-    display: flex;
     padding-top: 200%;
-    justify-content: left;
     border: none;
     background: none;
 }
 
 .noteTextBox {
-    background-color: teal;
+    background-color: #393552;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #e0def4;
     resize: none;
     padding: 10%;
     max-width: 100%;
@@ -77,45 +73,44 @@ a:visited   {
 }
 
 .noteModButton  {
-    color:;
+    color: #e0def4;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     width: fit-content;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: row;
     border: none;
     background: none;
 }
 
 /* Side Menu Stuff */
 .sideMenuContainer  {
-    display: flex;
-    flex-direction: column;
     width: 16.5%;
 }
 
 .sideMenuButton {
-    color:;
+    color: #ea9a97;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: fit-content;
     display: flex;
     position: sticky;
     font-size: larger;
     top: 0;
     width: 100%;
-    justify-content: left;
     border: none;
     background: none;
 }
 
 .sideMenu   {
-    background-color:coral;
-    color:;
+    background-color:#393552;
+    color: #e0def4;
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
     padding: 10%;
     height: 100vh;
     justify-content: flex-start;
+}
+
+.sideMenu ul    {
+    list-style: none;
+    padding-left:0;
 }
 
 .sideMenuNav    {
@@ -124,19 +119,12 @@ a:visited   {
     height: inherit;
     position: sticky;
     top: 0;
-    list-style-type: none;
-}
-.sideMenuNav ul li  {
-    justify-content: left;
-    list-style: none;
-    padding-left: 0;
 }
 
 /* Footer */
 footer {
-    color:;
+    color: #e0def4;
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
-    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -144,4 +132,18 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  }
+    body    {
+        font-size: small;
+    }
+    .noteContainer    {
+        font-size: x-small;
+        height: 10vh;
+        width: 20vw;
+    }
+    .sideMenuContainer  {
+        width: 33%;
+    }
+    footer {
+        font-size: smaller;
+    }
+}
